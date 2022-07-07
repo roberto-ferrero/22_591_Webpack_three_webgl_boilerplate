@@ -12,14 +12,16 @@ body {
   }
 
 
-#webgl_home1{
+#webgl_app{
     height: 100vh;
     width: 100vw;
 }
-#webgl_home1 canvas{
+#webgl_app canvas{
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     outline: none;
 }
 

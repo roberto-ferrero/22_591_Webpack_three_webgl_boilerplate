@@ -1,11 +1,11 @@
 
 import './style.css';
-
-import SampleClass from './SampleClass';
 import gsap from "gsap"
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
+
+import WebGLApp from './webgl/WebGLApp';
+
 
 /*
 ScrollTrigger.create({
@@ -20,4 +20,6 @@ ScrollTrigger.create({
 */
 
 
-const foo = new SampleClass()
+const foo = new WebGLApp({
+    $container: document.querySelector('#webgl_app')
+})
